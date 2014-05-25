@@ -1,8 +1,10 @@
-Bootstrap Form Helpers Library for Yii2
-=======================================
+Nexmo Library for Yii2
+======================
 
-Bootstrap Form Helpers Widget library allows you to use the amazing collection of jQuery plugins created by
-[Vincent Lamanna](http://bootstrapformhelpers.com/) and help you build better looking forms.
+Nexmo Library allows Yii programmers to use the Restful API offered by Mobile Messaging provider
+[Nexmo](https://es.nexmo.com/).
+
+[Nexmo](https://es.nexmo.com/) is a cloud-based SMS API that lets you send and receive high volume of messages at wholesale rates.
 
 Installation
 ------------
@@ -11,12 +13,12 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require "2amigos/yii2-bootstrap-form-helpers-library" "*"
+php composer.phar require "2amigos/yii2-nexmo-library" "*"
 ```
 or add
 
 ```json
-"2amigos/yii2-bootstrap-form-helpers-library" : "*"
+"2amigos/yii2-nexmo-library" : "*"
 ```
 
 to the require section of your application's `composer.json` file.
@@ -24,91 +26,28 @@ to the require section of your application's `composer.json` file.
 Usage
 -----
 
-The library comes with the following widgets:
+First you have to create your [Nexmo account](Nexmo API credentials) and get your API_KEY and API_SECRET.
 
-- ColorPicker
-- CountryPicker
-- CurrencyPicker
-- DatePicker
-- FontPicker
-- FontSizePicker
-- GoogleFontPicker
-- LanguagePicker
-- NumberInput
-- PhoneInput
-- Select
-- Slider
-- StatePicker
-- TimePicker
-- TimeZonePicker
-
-Pickers are `Select` are DropDownLists that have pretty much work the same in terms of usage. So, the following examples
-shows how to use an input and a DropDownList. I am sure you will figure out how to make use of the others until we have
-written the proper documentation site for all our extensions.
 
 ```php
-// using Select Widget, the custom select HTML element of the library
+// to send an sms message
+$sms = new dosamigos\Sms(['key' => 'API_KEY', 'secret' => 'API_SECRET', 'from' => 'SENDERID']);
 
-dosamigos\formhelpers\Select::widget([
-    'model' => $model,
-    'attribute' => 'attributeName',
-    'items' => [
-        '1' => 'One option',
-        '2' => 'Another option'
-    ],
-    // for all possible client options, please see
-    // http://bootstrapformhelpers.com/select/#jquery-plugins
-    'clientOptions' => [
-        'filter' => 'true' // boolean must be as a string
-    ]
-]);
+// lets call the API to get a json response
+$sms->format = 'json';
 
-// using the NumberInput
-dosamigos\formhelpers\NumberInput::widget([
-    'model' => $model,
-    'attribute' => 'updated_at',
-    // not required if we use it with yii\bootstrap\ActiveForm
-    'options' => ['class' => 'form-control'],
-    // for all possible client options, please see
-    // http://bootstrapformhelpers.com/number/#jquery-plugins
-    'clientOptions' => [
-        'min' => 20,
-        'max' => 40
-    ]
-]);
-// (remember that you can also use the following format)
-use dosamigos\formhelpers\NumberInput;
+// send a message with an optional parameter (see Nexmo doc for more optional parameters)
+$response = $sms->sentText('RECIPIENTSNUMBER', 'Hello World!', ['clientRef' => 'YOURCLIENTREF']);
 
-$form->input($model, 'attribute')->widget(NumberInput::className(),['clientOptions' => ['min' => 20, 'max' => 40]]);
-
-// using the DatePicker with a selected language
-dosamigos\formhelpers\DatePicker::widget([
-    'model' => $model,
-    'attribute' => 'updated_at',
-    'language' => 'es_ES',
-    'clientOptions' => [
-        'format' => 'm/d/y',
-    ]
-]);
-
-// using the CurrencyPicker with flags
-dosamigos\formhelpers\CurrencyPicker::widget([
-    'model' => $model,
-    'attribute' => 'updated_at',
-    // important! if we don't use the custom select HTML we won't see the flags
-    'selectBox' => true,
-    'clientOptions' => [
-        'flags' => 'true',
-    ]
-])
+// if a response expects a JSON object, it will return as an array, if format was a XML, it will return an object.
+echo $response['message-count']; // the number of parts the message was split into
 
 ```
 
 Further Information
 -------------------
 
-For further information regarding the multiple options for the different plugins please visit
-[its website](http://bootstrapformhelpers.com/)
+For further information regarding Nexmo, please visit [its documentation](https://docs.nexmo.com/)
 
 
 > [![2amigOS!](http://www.gravatar.com/avatar/55363394d72945ff7ed312556ec041e0.png)](http://www.2amigos.us)
