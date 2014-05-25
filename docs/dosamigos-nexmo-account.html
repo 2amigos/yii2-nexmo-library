@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en" />
+    <link href="./assets/c42f0948/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/a3ecaf59/style.css" rel="stylesheet">
+<script src="./assets/11f97712/jquery.js"></script>
+<script src="./assets/c42f0948/js/bootstrap.js"></script>
+<script src="./assets/20cb9e18/jssearch.js"></script>    <title>Yii 2.0 Nexmo Library API Documentation</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w1" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#w1-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">Yii 2.0 Nexmo Library API Documentation</a></div><div id="w1-collapse" class="collapse navbar-collapse"><ul id="w2" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li></ul><div class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+  </div>
+</div>
+</div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    
+<div class="row">
+    <div class="col-md-3">
+                <div id="navigation" class="list-group"><a class="list-group-item active" href="#navigation-0" data-toggle="collapse" data-parent="#navigation">dosamigos\nexmo <b class="caret"></b></a><div id="navigation-0" class="submenu panel-collapse collapse in"><a class="list-group-item active" href="./dosamigos-nexmo-account.html">Account</a>
+<a class="list-group-item" href="./dosamigos-nexmo-client.html">Client</a>
+<a class="list-group-item" href="./dosamigos-nexmo-deliverycallbackaction.html">DeliveryCallbackAction</a>
+<a class="list-group-item" href="./dosamigos-nexmo-deliverycallbackevent.html">DeliveryCallbackEvent</a>
+<a class="list-group-item" href="./dosamigos-nexmo-deliveryreceipt.html">DeliveryReceipt</a>
+<a class="list-group-item" href="./dosamigos-nexmo-inboundcallbackaction.html">InboundCallbackAction</a>
+<a class="list-group-item" href="./dosamigos-nexmo-inboundcallbackevent.html">InboundCallbackEvent</a>
+<a class="list-group-item" href="./dosamigos-nexmo-inboundmessage.html">InboundMessage</a>
+<a class="list-group-item" href="./dosamigos-nexmo-object.html">Object</a>
+<a class="list-group-item" href="./dosamigos-nexmo-sms.html">Sms</a></div></div>    </div>
+    <div class="col-md-9 api-content" role="main">
+        <h1>Class dosamigos\nexmo\Account</h1>
+<div id="nav">
+    <a href="index.html">All Classes</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+            </div>
+
+<table class="summaryTable docClass table table-bordered">
+    <colgroup>
+        <col class="col-name" />
+        <col class="col-value" />
+    </colgroup>
+            <tr><th>Inheritance</th><td><a href="dosamigos-nexmo-account.html">dosamigos\nexmo\Account</a> &raquo;
+<a href="dosamigos-nexmo-client.html">dosamigos\nexmo\Client</a> &raquo;
+yii\base\Component</td></tr>
+                                </table>
+
+<div id="classDescription">
+    <strong>Class Account handles interaction with your Nexmo account.</strong>
+    <p></p>
+</div>
+
+<a name="properties"></a>
+
+<div class="summary doc-property">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-property" />
+    <col class="col-type" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+        <tr class="inherited" id="$api">
+        <td><a href="dosamigos-nexmo-client.html#$api-detail">$api</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>API endpoint</td>
+        <td><a href="dosamigos-nexmo-client.html">dosamigos\nexmo\Client</a></td>
+    </tr>
+            <tr class="inherited" id="$format">
+        <td><a href="dosamigos-nexmo-client.html#$format-detail">$format</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>Response format.</td>
+        <td><a href="dosamigos-nexmo-client.html">dosamigos\nexmo\Client</a></td>
+    </tr>
+            <tr class="inherited" id="$key">
+        <td><a href="dosamigos-nexmo-client.html#$key-detail">$key</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>Your API key</td>
+        <td><a href="dosamigos-nexmo-client.html">dosamigos\nexmo\Client</a></td>
+    </tr>
+            <tr class="inherited" id="$secret">
+        <td><a href="dosamigos-nexmo-client.html#$secret-detail">$secret</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>Your API secret</td>
+        <td><a href="dosamigos-nexmo-client.html">dosamigos\nexmo\Client</a></td>
+    </tr>
+        </table>
+</div>
+
+<div class="summary doc-property">
+<h2>Protected Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-property" />
+    <col class="col-type" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+                        <tr class="inherited" id="$uri">
+        <td><a href="dosamigos-nexmo-client.html#$uri-detail">$uri</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>The formed uri by child classes</td>
+        <td><a href="dosamigos-nexmo-client.html">dosamigos\nexmo\Client</a></td>
+    </tr>
+    </table>
+</div>
+
+<a name="methods"></a>
+
+<div class="summary doc-method">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-method" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+        <tr id="buyNumber()">
+        <td><a href="dosamigos-nexmo-account.html#buyNumber()-detail">buyNumber()</a></td>
+        <td>Purchase a given inbound number.</td>
+        <td><a href="dosamigos-nexmo-account.html">dosamigos\nexmo\Account</a></td>
+    </tr>
+            <tr id="cancelNumber()">
+        <td><a href="dosamigos-nexmo-account.html#cancelNumber()-detail">cancelNumber()</a></td>
+        <td>Cancel a given inbound number subscription.</td>
+        <td><a href="dosamigos-nexmo-account.html">dosamigos\nexmo\Account</a></td>
+    </tr>
+                <tr id="getBalance()">
+        <td><a href="dosamigos-nexmo-account.html#getBalance()-detail">getBalance()</a></td>
+        <td>Retrieve your current account balance.</td>
+        <td><a href="dosamigos-nexmo-account.html">dosamigos\nexmo\Account</a></td>
+    </tr>
+                <tr id="getNumbers()">
+        <td><a href="dosamigos-nexmo-account.html#getNumbers()-detail">getNumbers()</a></td>
+        <td>Get all inbound numbers associated with your Nexmo account.</td>
+        <td><a href="dosamigos-nexmo-account.html">dosamigos\nexmo\Account</a></td>
+    </tr>
+            <tr id="getPricing()">
+        <td><a href="dosamigos-nexmo-account.html#getPricing()-detail">getPricing()</a></td>
+        <td>Retrieve our outbound pricing for a given country.</td>
+        <td><a href="dosamigos-nexmo-account.html">dosamigos\nexmo\Account</a></td>
+    </tr>
+                <tr class="inherited" id="init()">
+        <td><a href="dosamigos-nexmo-client.html#init()-detail">init()</a></td>
+        <td>Initializes the object.</td>
+        <td><a href="dosamigos-nexmo-client.html">dosamigos\nexmo\Client</a></td>
+    </tr>
+                <tr id="searchMessage()">
+        <td><a href="dosamigos-nexmo-account.html#searchMessage()-detail">searchMessage()</a></td>
+        <td>Search a previously sent message for a given message id. Please note a message become searchable a few minutes
+after submission for real-time delivery notification implement our DLR call back.</td>
+        <td><a href="dosamigos-nexmo-account.html">dosamigos\nexmo\Account</a></td>
+    </tr>
+            <tr id="searchMessagesByDate()">
+        <td><a href="dosamigos-nexmo-account.html#searchMessagesByDate()-detail">searchMessagesByDate()</a></td>
+        <td>Search sent messages. Please note a message become searchable a few minutes after submission for real-time
+delivery notification implement the DLR call back.</td>
+        <td><a href="dosamigos-nexmo-account.html">dosamigos\nexmo\Account</a></td>
+    </tr>
+            <tr id="searchMessagesByIds()">
+        <td><a href="dosamigos-nexmo-account.html#searchMessagesByIds()-detail">searchMessagesByIds()</a></td>
+        <td>Search sent messages. Please note a message become searchable a few minutes after submission for real-time
+delivery notification implement the DLR call back.</td>
+        <td><a href="dosamigos-nexmo-account.html">dosamigos\nexmo\Account</a></td>
+    </tr>
+            <tr id="searchNumbers()">
+        <td><a href="dosamigos-nexmo-account.html#searchNumbers()-detail">searchNumbers()</a></td>
+        <td>Get available inbound numbers for a given country.</td>
+        <td><a href="dosamigos-nexmo-account.html">dosamigos\nexmo\Account</a></td>
+    </tr>
+            <tr id="searchRejections()">
+        <td><a href="dosamigos-nexmo-account.html#searchRejections()-detail">searchRejections()</a></td>
+        <td>Search rejected messages. Please note a message become searchable a few minutes after submission.</td>
+        <td><a href="dosamigos-nexmo-account.html">dosamigos\nexmo\Account</a></td>
+    </tr>
+            <tr id="topUp()">
+        <td><a href="dosamigos-nexmo-account.html#topUp()-detail">topUp()</a></td>
+        <td>Top-up your account, only if you have turn-on the 'auto-reload' feature. The top-up amount is the one associated
+with your 'auto-reload' transaction.</td>
+        <td><a href="dosamigos-nexmo-account.html">dosamigos\nexmo\Account</a></td>
+    </tr>
+            <tr id="updateNumber()">
+        <td><a href="dosamigos-nexmo-account.html#updateNumber()-detail">updateNumber()</a></td>
+        <td>Update your number callback.</td>
+        <td><a href="dosamigos-nexmo-account.html">dosamigos\nexmo\Account</a></td>
+    </tr>
+            <tr id="updateSettings()">
+        <td><a href="dosamigos-nexmo-account.html#updateSettings()-detail">updateSettings()</a></td>
+        <td>Update your account settings.</td>
+        <td><a href="dosamigos-nexmo-account.html">dosamigos\nexmo\Account</a></td>
+    </tr>
+        </table>
+</div>
+
+<div class="summary doc-method">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-method" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+                <tr id="getAcceptHeaderOption()">
+        <td><a href="dosamigos-nexmo-account.html#getAcceptHeaderOption()-detail">getAcceptHeaderOption()</a></td>
+        <td>Returns the Accept header according to the format selected</td>
+        <td><a href="dosamigos-nexmo-account.html">dosamigos\nexmo\Account</a></td>
+    </tr>
+                <tr class="inherited" id="getGuzzleClient()">
+        <td><a href="dosamigos-nexmo-client.html#getGuzzleClient()-detail">getGuzzleClient()</a></td>
+        <td>Returns the guzzle client</td>
+        <td><a href="dosamigos-nexmo-client.html">dosamigos\nexmo\Client</a></td>
+    </tr>
+                    <tr id="getUrl()">
+        <td><a href="dosamigos-nexmo-account.html#getUrl()-detail">getUrl()</a></td>
+        <td>Returns the formed api call</td>
+        <td><a href="dosamigos-nexmo-account.html">dosamigos\nexmo\Account</a></td>
+    </tr>
+                <tr class="inherited" id="request()">
+        <td><a href="dosamigos-nexmo-client.html#request()-detail">request()</a></td>
+        <td>Makes a Url request and returns its response</td>
+        <td><a href="dosamigos-nexmo-client.html">dosamigos\nexmo\Client</a></td>
+    </tr>
+                                            <tr class="inherited" id="validateUTF8()">
+        <td><a href="dosamigos-nexmo-client.html#validateUTF8()-detail">validateUTF8()</a></td>
+        <td>Validates whether the value is UTF8 encoded and if not, it encodes it.</td>
+        <td><a href="dosamigos-nexmo-client.html">dosamigos\nexmo\Client</a></td>
+    </tr>
+    </table>
+</div>
+
+<a name="events"></a>
+
+<a name="constants"></a>
+
+<h2>Method Details</h2>
+
+<div class="method-doc">
+
+    <div class="detail-header h3" id="buyNumber()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-account.html#buyNumber()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        buyNumber()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Purchase a given inbound number.</strong></p>
+
+        
+        <p>See also <a href="https://docs.nexmo.com/index.php/developer-api/number-buy">https://docs.nexmo.com/index.php/developer-api/number-buy</a>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.string">string</a> <strong><a href="dosamigos-nexmo-account.html#buyNumber()-detail">buyNumber</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$country</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$msisdn&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$country</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>Country code. Ex: ES</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$msisdn</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>An available inbound number Ex: 34911067000</p>
+</td>
+                </tr>
+                                        <tr>
+                  <th class="param-name-col">return</th>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The status code. Possible values:
+- 200 if successful purchase
+- 401 if wrong credentials
+- 420 if wrong parameters</p>
+</td>
+                </tr>
+                                    </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="cancelNumber()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-account.html#cancelNumber()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        cancelNumber()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Cancel a given inbound number subscription.</strong></p>
+
+        
+        <p>See also <a href="https://docs.nexmo.com/index.php/developer-api/number-cancel">https://docs.nexmo.com/index.php/developer-api/number-cancel</a>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.string">string</a> <strong><a href="dosamigos-nexmo-account.html#cancelNumber()-detail">cancelNumber</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$country</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$msisdn&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$country</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>Country code. Ex: CA</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$msisdn</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>One of your inbound numbers Ex: 34911067000</p>
+</td>
+                </tr>
+                                        <tr>
+                  <th class="param-name-col">return</th>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The status code. Possible values:
+- 200 if successful cancellation
+- 401 if wrong credentials
+- 420 if wrong parameters</p>
+</td>
+                </tr>
+                                    </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="getAcceptHeaderOption()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-account.html#getAcceptHeaderOption()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getAcceptHeaderOption()
+        <span class="detail-header-tag small">
+            protected            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Returns the Accept header according to the format selected</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.array">array</a> <strong><a href="dosamigos-nexmo-account.html#getAcceptHeaderOption()-detail">getAcceptHeaderOption</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;)</span></td></tr>
+            </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="getBalance()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-account.html#getBalance()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getBalance()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Retrieve your current account balance.</strong></p>
+
+        
+        <p>See also <a href="https://docs.nexmo.com/index.php/developer-api/account-get-balance">https://docs.nexmo.com/index.php/developer-api/account-get-balance</a>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature">mixed|<a href="http://www.php.net/language.types.null">null</a> <strong><a href="dosamigos-nexmo-account.html#getBalance()-detail">getBalance</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;)</span></td></tr>
+            </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="getNumbers()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-account.html#getNumbers()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getNumbers()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Get all inbound numbers associated with your Nexmo account.</strong></p>
+
+        
+        <p>See also <a href="https://docs.nexmo.com/index.php/developer-api/account-numbers">https://docs.nexmo.com/index.php/developer-api/account-numbers</a>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature">mixed <strong><a href="dosamigos-nexmo-account.html#getNumbers()-detail">getNumbers</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$index&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$size&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$pattern&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$index</span></td>
+                  <td class="param-type-col">int</td>
+                  <td class="param-desc-col"><p>Page index (&gt;0, default 1). Ex: 2</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$size</span></td>
+                  <td class="param-type-col">int</td>
+                  <td class="param-desc-col"><p>Page size (max 100, default 10). Ex: 25</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$pattern</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>Page size (max 100, default 10). Ex: 25</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="getPricing()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-account.html#getPricing()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getPricing()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Retrieve our outbound pricing for a given country.</strong></p>
+
+        
+        <p>See also <a href="https://docs.nexmo.com/index.php/developer-api/account-pricing">https://docs.nexmo.com/index.php/developer-api/account-pricing</a>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature">mixed <strong><a href="dosamigos-nexmo-account.html#getPricing()-detail">getPricing</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$country&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$country</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>A 2 letter country code. Ex: CA</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="getUrl()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-account.html#getUrl()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getUrl()
+        <span class="detail-header-tag small">
+            protected            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Returns the formed api call</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.string">string</a> <strong><a href="dosamigos-nexmo-account.html#getUrl()-detail">getUrl</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$command&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$command</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The command key</p>
+</td>
+                </tr>
+                                        <tr>
+                  <th class="param-name-col">return</th>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The api url call</p>
+</td>
+                </tr>
+                                    </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="searchMessage()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-account.html#searchMessage()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        searchMessage()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Search a previously sent message for a given message id. Please note a message become searchable a few minutes
+after submission for real-time delivery notification implement our DLR call back.</strong></p>
+
+        
+        <p>See also <a href="https://docs.nexmo.com/index.php/developer-api/search-message">https://docs.nexmo.com/index.php/developer-api/search-message</a>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature">mixed <strong><a href="dosamigos-nexmo-account.html#searchMessage()-detail">searchMessage</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$id&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$id</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>Your message id received at submission time Ex: 00A0B0C0</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="searchMessagesByDate()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-account.html#searchMessagesByDate()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        searchMessagesByDate()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Search sent messages. Please note a message become searchable a few minutes after submission for real-time
+delivery notification implement the DLR call back.</strong></p>
+
+        
+        <p>See also <a href="https://docs.nexmo.com/index.php/developer-api/search-messages">https://docs.nexmo.com/index.php/developer-api/search-messages</a>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature">mixed <strong><a href="dosamigos-nexmo-account.html#searchMessagesByDate()-detail">searchMessagesByDate</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$date</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$to&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$date</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>Message date submission YYYY-MM-DD Ex: 2011-11-15</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$to</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>A recipient number Ex: 1234567890</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="searchMessagesByIds()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-account.html#searchMessagesByIds()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        searchMessagesByIds()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Search sent messages. Please note a message become searchable a few minutes after submission for real-time
+delivery notification implement the DLR call back.</strong></p>
+
+        
+        <p>See also <a href="https://docs.nexmo.com/index.php/developer-api/search-messages">https://docs.nexmo.com/index.php/developer-api/search-messages</a>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature">mixed <strong><a href="dosamigos-nexmo-account.html#searchMessagesByIds()-detail">searchMessagesByIds</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$ids&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$ids</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a></td>
+                  <td class="param-desc-col"><p>A list of message ids, up to 10 Ex: ['00A0B0C0','00A0B0C1','00A0B0C2']</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="searchNumbers()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-account.html#searchNumbers()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        searchNumbers()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Get available inbound numbers for a given country.</strong></p>
+
+        
+        <p>See also <a href="https://docs.nexmo.com/index.php/developer-api/number-search">https://docs.nexmo.com/index.php/developer-api/number-search</a>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature">mixed <strong><a href="dosamigos-nexmo-account.html#searchNumbers()-detail">searchNumbers</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$country</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$pattern&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$features&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$index&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$size&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$country</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>Country code. Ex: CA</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$pattern</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>A matching pattern. Ex: 888</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$features</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>Available features are SMS and VOICE, use a comma-separated values. Ex: SMS,VOICE</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$index</span></td>
+                  <td class="param-type-col">int</td>
+                  <td class="param-desc-col"><p>Page index (&gt;0, default 1). Ex: 2</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$size</span></td>
+                  <td class="param-type-col">int</td>
+                  <td class="param-desc-col"><p>Page size (max 100, default 10). Ex: 25</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="searchRejections()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-account.html#searchRejections()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        searchRejections()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Search rejected messages. Please note a message become searchable a few minutes after submission.</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature">mixed <strong><a href="dosamigos-nexmo-account.html#searchRejections()-detail">searchRejections</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$date</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$to&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$date</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>Message date submission YYYY-MM-DD Ex: 2011-11-15</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$to</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>A recipient number Ex: 1234567890</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="topUp()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-account.html#topUp()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        topUp()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Top-up your account, only if you have turn-on the 'auto-reload' feature. The top-up amount is the one associated
+with your 'auto-reload' transaction.</strong></p>
+
+        
+        <p>See also <a href="https://docs.nexmo.com/index.php/developer-api/account-top-up">https://docs.nexmo.com/index.php/developer-api/account-top-up</a>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.string">string</a> <strong><a href="dosamigos-nexmo-account.html#topUp()-detail">topUp</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$transactionId&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$transactionId</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The transaction id associated with your <strong>first</strong> 'auto reload' top-up.
+Ex: 00X123456Y7890123Z</p>
+</td>
+                </tr>
+                                        <tr>
+                  <th class="param-name-col">return</th>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The status code. Possible responses:
+- 200 if successful top-up
+- 401 if not authorized to perform the request
+- 420 if top-up failed</p>
+</td>
+                </tr>
+                                    </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="updateNumber()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-account.html#updateNumber()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        updateNumber()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Update your number callback.</strong></p>
+
+        
+        <p>See also <a href="https://docs.nexmo.com/index.php/developer-api/number-update">https://docs.nexmo.com/index.php/developer-api/number-update</a>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.string">string</a> <strong><a href="dosamigos-nexmo-account.html#updateNumber()-detail">updateNumber</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$country</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$msisdn</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$mHttpUrl&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$moSmppSysType&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$voiceCallbackType&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$voiceCallbackValue&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$country</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>Country code. Ex: ES</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$msisdn</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>One of your inbound numbers Ex: 34911067000</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$mHttpUrl</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The URL should be active to be taken into account Ex: <a href="http://mycallback.servername">http://mycallback.servername</a></p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$moSmppSysType</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The associated system type for SMPP client only Ex: inbound</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$voiceCallbackType</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The voice callback type for SIP end point (sip), for a telephone number (tel),
+for VoiceXML end point (vxml)</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$voiceCallbackValue</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The voice callback value based on the voiceCallbackType</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="updateSettings()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-account.html#updateSettings()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        updateSettings()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Update your account settings.</strong></p>
+
+        
+        <p>See also <a href="https://docs.nexmo.com/index.php/developer-api/account-settings">https://docs.nexmo.com/index.php/developer-api/account-settings</a>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature">mixed|<a href="http://www.php.net/language.types.null">null</a> <strong><a href="dosamigos-nexmo-account.html#updateSettings()-detail">updateSettings</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$newSecret&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$moCallBackUrl&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$drCallBackUrl&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$newSecret</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>Your new API secret (8 characters max)</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$moCallBackUrl</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>Inbound call back URL. The URL should be active to be taken into account
+Ex: <a href="http://mycallback.servername">http://mycallback.servername</a></p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$drCallBackUrl</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>DLR call back URL. The URL should be active to be taken into account and
+Ex: <a href="http://mycallback.servername">http://mycallback.servername</a></p>
+</td>
+                </tr>
+                                                    <tr>
+                  <th class="param-name-col">throws</th>
+                  <td class="param-type-col">\yii\base\InvalidParamException</td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                        </table>
+
+<!--	-->
+</div>
+        </div>
+</div>
+
+<script type="text/javascript">
+    /*<![CDATA[*/
+    $("a.toggle").on('click', function () {
+        var $this = $(this);
+        if ($this.hasClass('properties-hidden')) {
+            $this.text($this.text().replace(/Show/,'Hide'));
+            $this.parents(".summary").find(".inherited").show();
+            $this.removeClass('properties-hidden');
+        } else {
+            $this.text($this.text().replace(/Hide/,'Show'));
+            $this.parents(".summary").find(".inherited").hide();
+            $this.addClass('properties-hidden');
+        }
+
+        return false;
+    });
+    /*
+     $(".sourceCode a.show").toggle(function () {
+     $(this).text($(this).text().replace(/show/,'hide'));
+     $(this).parents(".sourceCode").find("div.code").show();
+     },function () {
+     $(this).text($(this).text().replace(/hide/,'show'));
+     $(this).parents(".sourceCode").find("div.code").hide();
+     });
+     $("a.sourceLink").click(function () {
+     $(this).attr('target','_blank');
+     });
+     */
+    /*]]>*/
+</script>
+
+
+</div>
+
+<footer class="footer">
+        <p class="pull-right"><small>Page generated on Sun, 25 May 2014 20:07:18 +0000</small></p>
+    Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
+
+<script type="text/javascript">jQuery(document).ready(function () {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) shiftWindow();
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// focus the search field
+searchBox.focus();
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

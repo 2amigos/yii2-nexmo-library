@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en" />
+    <link href="./assets/c42f0948/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/a3ecaf59/style.css" rel="stylesheet">
+<script src="./assets/11f97712/jquery.js"></script>
+<script src="./assets/c42f0948/js/bootstrap.js"></script>
+<script src="./assets/20cb9e18/jssearch.js"></script>    <title>Yii 2.0 Nexmo Library API Documentation</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w34" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#w34-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">Yii 2.0 Nexmo Library API Documentation</a></div><div id="w34-collapse" class="collapse navbar-collapse"><ul id="w35" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li></ul><div class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+  </div>
+</div>
+</div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    
+<div class="row">
+    <div class="col-md-3">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-33" data-toggle="collapse" data-parent="#navigation">dosamigos\nexmo <b class="caret"></b></a><div id="navigation-33" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./dosamigos-nexmo-account.html">Account</a>
+<a class="list-group-item" href="./dosamigos-nexmo-client.html">Client</a>
+<a class="list-group-item" href="./dosamigos-nexmo-deliverycallbackaction.html">DeliveryCallbackAction</a>
+<a class="list-group-item" href="./dosamigos-nexmo-deliverycallbackevent.html">DeliveryCallbackEvent</a>
+<a class="list-group-item" href="./dosamigos-nexmo-deliveryreceipt.html">DeliveryReceipt</a>
+<a class="list-group-item" href="./dosamigos-nexmo-inboundcallbackaction.html">InboundCallbackAction</a>
+<a class="list-group-item" href="./dosamigos-nexmo-inboundcallbackevent.html">InboundCallbackEvent</a>
+<a class="list-group-item" href="./dosamigos-nexmo-inboundmessage.html">InboundMessage</a>
+<a class="list-group-item" href="./dosamigos-nexmo-object.html">Object</a>
+<a class="list-group-item" href="./dosamigos-nexmo-sms.html">Sms</a></div></div>    </div>
+    <div class="col-md-9 api-content" role="main">
+        <h1>Class Reference</h1>
+
+<table class="summaryTable docIndex table table-bordered table-striped table-hover">
+    <colgroup>
+        <col class="col-package" />
+        <col class="col-class" />
+        <col class="col-description" />
+    </colgroup>
+    <tr>
+        <th>Class</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><a href="dosamigos-nexmo-account.html">dosamigos\nexmo\Account</a></td>
+        <td>Class Account handles interaction with your Nexmo account.</td>
+    </tr>
+    <tr>
+        <td><a href="dosamigos-nexmo-client.html">dosamigos\nexmo\Client</a></td>
+        <td>Class Client is the base class of Components that access the API and handles the calls to the API base end point.</td>
+    </tr>
+    <tr>
+        <td><a href="dosamigos-nexmo-deliverycallbackaction.html">dosamigos\nexmo\DeliveryCallbackAction</a></td>
+        <td>Class DeliveryCallbackAction handles delivery receipt.</td>
+    </tr>
+    <tr>
+        <td><a href="dosamigos-nexmo-deliverycallbackevent.html">dosamigos\nexmo\DeliveryCallbackEvent</a></td>
+        <td>Class DeliveryCallbackEvent is the <strong>\yii\base\Event</strong> object that is sent as a parameter when a
+<a href="dosamigos-nexmo-deliverycallbackaction.html">dosamigos\nexmo\DeliveryCallbackAction</a> is used as a CallBack Url. This Event holds a <a href="dosamigos-nexmo-deliveryreceipt.html">dosamigos\nexmo\DeliveryReceipt</a> object that is
+initialized with the parameters received.</td>
+    </tr>
+    <tr>
+        <td><a href="dosamigos-nexmo-deliveryreceipt.html">dosamigos\nexmo\DeliveryReceipt</a></td>
+        <td>Class DeliveryReceipt is the class that holds all the parameters received when a CallBack Url is set for message
+delivery callback. Nexmo calls your configured CallBack Url (that should be done using <a href="dosamigos-nexmo-deliverycallbackaction.html">dosamigos\nexmo\DeliveryCallbackAction</a>
+action) and sends a list of parameters that <a href="dosamigos-nexmo-deliveryreceipt.html">dosamigos\nexmo\DeliveryReceipt</a> is initialized with.</td>
+    </tr>
+    <tr>
+        <td><a href="dosamigos-nexmo-inboundcallbackaction.html">dosamigos\nexmo\InboundCallbackAction</a></td>
+        <td>Class InboundCallbackAction handles inbound message requests.</td>
+    </tr>
+    <tr>
+        <td><a href="dosamigos-nexmo-inboundcallbackevent.html">dosamigos\nexmo\InboundCallbackEvent</a></td>
+        <td>Class InboundCallbackEvent is the <strong>\yii\base\Event</strong> object that is sent as a parameter when a
+<a href="dosamigos-nexmo-inboundcallbackaction.html">dosamigos\nexmo\InboundCallbackAction</a> is used as a CallBack Url to handle Inbound Messages. This Event holds an
+<a href="dosamigos-nexmo-inboundmessage.html">dosamigos\nexmo\InboundMessage</a> object that is initialized with the parameters received.</td>
+    </tr>
+    <tr>
+        <td><a href="dosamigos-nexmo-inboundmessage.html">dosamigos\nexmo\InboundMessage</a></td>
+        <td>Class InboundMessage is the class that is initialized with all the parameters sent to a CallBack Url that is set to
+handle inbound messages. In order to receive an <a href="dosamigos-nexmo-inboundmessage.html">dosamigos\nexmo\InboundMessage</a> object you need to set your CallBack Url with
+the <a href="dosamigos-nexmo-inboundcallbackaction.html">dosamigos\nexmo\InboundCallbackAction</a> which will trigger an <a href="dosamigos-nexmo-inboundcallbackevent.html">dosamigos\nexmo\InboundCallbackEvent</a> with an <a href="dosamigos-nexmo-inboundmessage.html">dosamigos\nexmo\InboundMessage</a> object
+initialized with the parameters sent.</td>
+    </tr>
+    <tr>
+        <td><a href="dosamigos-nexmo-object.html">dosamigos\nexmo\Object</a></td>
+        <td>Class Object is the base calls for <a href="dosamigos-nexmo-deliveryreceipt.html">dosamigos\nexmo\DeliveryReceipt</a> and <a href="dosamigos-nexmo-inboundmessage.html">dosamigos\nexmo\InboundMessage</a> objects.</td>
+    </tr>
+    <tr>
+        <td><a href="dosamigos-nexmo-sms.html">dosamigos\nexmo\Sms</a></td>
+        <td>Class Sms handles the methods and properties of sending a SMS message through your Nexmo account.</td>
+    </tr>
+</table>
+    </div>
+</div>
+
+<script type="text/javascript">
+    /*<![CDATA[*/
+    $("a.toggle").on('click', function () {
+        var $this = $(this);
+        if ($this.hasClass('properties-hidden')) {
+            $this.text($this.text().replace(/Show/,'Hide'));
+            $this.parents(".summary").find(".inherited").show();
+            $this.removeClass('properties-hidden');
+        } else {
+            $this.text($this.text().replace(/Hide/,'Show'));
+            $this.parents(".summary").find(".inherited").hide();
+            $this.addClass('properties-hidden');
+        }
+
+        return false;
+    });
+    /*
+     $(".sourceCode a.show").toggle(function () {
+     $(this).text($(this).text().replace(/show/,'hide'));
+     $(this).parents(".sourceCode").find("div.code").show();
+     },function () {
+     $(this).text($(this).text().replace(/hide/,'show'));
+     $(this).parents(".sourceCode").find("div.code").hide();
+     });
+     $("a.sourceLink").click(function () {
+     $(this).attr('target','_blank');
+     });
+     */
+    /*]]>*/
+</script>
+
+
+</div>
+
+<footer class="footer">
+        <p class="pull-right"><small>Page generated on Sun, 25 May 2014 20:07:18 +0000</small></p>
+    Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
+
+<script type="text/javascript">jQuery(document).ready(function () {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) shiftWindow();
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// focus the search field
+searchBox.focus();
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en" />
+    <link href="./assets/c42f0948/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/a3ecaf59/style.css" rel="stylesheet">
+<script src="./assets/11f97712/jquery.js"></script>
+<script src="./assets/c42f0948/js/bootstrap.js"></script>
+<script src="./assets/20cb9e18/jssearch.js"></script>    <title>Yii 2.0 Nexmo Library API Documentation</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w22" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#w22-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">Yii 2.0 Nexmo Library API Documentation</a></div><div id="w22-collapse" class="collapse navbar-collapse"><ul id="w23" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li></ul><div class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+  </div>
+</div>
+</div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    
+<div class="row">
+    <div class="col-md-3">
+                <div id="navigation" class="list-group"><a class="list-group-item active" href="#navigation-21" data-toggle="collapse" data-parent="#navigation">dosamigos\nexmo <b class="caret"></b></a><div id="navigation-21" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./dosamigos-nexmo-account.html">Account</a>
+<a class="list-group-item" href="./dosamigos-nexmo-client.html">Client</a>
+<a class="list-group-item" href="./dosamigos-nexmo-deliverycallbackaction.html">DeliveryCallbackAction</a>
+<a class="list-group-item" href="./dosamigos-nexmo-deliverycallbackevent.html">DeliveryCallbackEvent</a>
+<a class="list-group-item" href="./dosamigos-nexmo-deliveryreceipt.html">DeliveryReceipt</a>
+<a class="list-group-item" href="./dosamigos-nexmo-inboundcallbackaction.html">InboundCallbackAction</a>
+<a class="list-group-item" href="./dosamigos-nexmo-inboundcallbackevent.html">InboundCallbackEvent</a>
+<a class="list-group-item active" href="./dosamigos-nexmo-inboundmessage.html">InboundMessage</a>
+<a class="list-group-item" href="./dosamigos-nexmo-object.html">Object</a>
+<a class="list-group-item" href="./dosamigos-nexmo-sms.html">Sms</a></div></div>    </div>
+    <div class="col-md-9 api-content" role="main">
+        <h1>Class dosamigos\nexmo\InboundMessage</h1>
+<div id="nav">
+    <a href="index.html">All Classes</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+            </div>
+
+<table class="summaryTable docClass table table-bordered">
+    <colgroup>
+        <col class="col-name" />
+        <col class="col-value" />
+    </colgroup>
+            <tr><th>Inheritance</th><td><a href="dosamigos-nexmo-inboundmessage.html">dosamigos\nexmo\InboundMessage</a> &raquo;
+<a href="dosamigos-nexmo-object.html">dosamigos\nexmo\Object</a> &raquo;
+yii\base\Object</td></tr>
+                                </table>
+
+<div id="classDescription">
+    <strong>Class InboundMessage is the class that is initialized with all the parameters sent to a CallBack Url that is set to
+handle inbound messages. In order to receive an <a href="dosamigos-nexmo-inboundmessage.html">dosamigos\nexmo\InboundMessage</a> object you need to set your CallBack Url with
+the <a href="dosamigos-nexmo-inboundcallbackaction.html">dosamigos\nexmo\InboundCallbackAction</a> which will trigger an <a href="dosamigos-nexmo-inboundcallbackevent.html">dosamigos\nexmo\InboundCallbackEvent</a> with an <a href="dosamigos-nexmo-inboundmessage.html">dosamigos\nexmo\InboundMessage</a> object
+initialized with the parameters sent.</strong>
+    <p></p>
+</div>
+
+<a name="properties"></a>
+
+<div class="summary doc-property">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-property" />
+    <col class="col-type" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+        <tr id="$concat">
+        <td><a href="dosamigos-nexmo-inboundmessage.html#$concat-detail">$concat</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>Set to true if a MO concatenated message is detected.</td>
+        <td><a href="dosamigos-nexmo-inboundmessage.html">dosamigos\nexmo\InboundMessage</a></td>
+    </tr>
+            <tr id="$concatPart">
+        <td><a href="dosamigos-nexmo-inboundmessage.html#$concatPart-detail">$concatPart</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>The part number of this message within the set (starts at 1).</td>
+        <td><a href="dosamigos-nexmo-inboundmessage.html">dosamigos\nexmo\InboundMessage</a></td>
+    </tr>
+            <tr id="$concatRef">
+        <td><a href="dosamigos-nexmo-inboundmessage.html#$concatRef-detail">$concatRef</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>Transaction reference, all message parts will shared the same transaction reference.</td>
+        <td><a href="dosamigos-nexmo-inboundmessage.html">dosamigos\nexmo\InboundMessage</a></td>
+    </tr>
+            <tr id="$concatTotal">
+        <td><a href="dosamigos-nexmo-inboundmessage.html#$concatTotal-detail">$concatTotal</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>The total number of parts in this concatenated message.</td>
+        <td><a href="dosamigos-nexmo-inboundmessage.html">dosamigos\nexmo\InboundMessage</a></td>
+    </tr>
+            <tr id="$data">
+        <td><a href="dosamigos-nexmo-inboundmessage.html#$data-detail">$data</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>Content of the message.</td>
+        <td><a href="dosamigos-nexmo-inboundmessage.html">dosamigos\nexmo\InboundMessage</a></td>
+    </tr>
+            <tr class="inherited" id="$messageId">
+        <td><a href="dosamigos-nexmo-object.html#$messageId-detail">$messageId</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>The message ID.</td>
+        <td><a href="dosamigos-nexmo-object.html">dosamigos\nexmo\Object</a></td>
+    </tr>
+            <tr class="inherited" id="$messageTimestamp">
+        <td><a href="dosamigos-nexmo-object.html#$messageTimestamp-detail">$messageTimestamp</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>When Nexmo started to push the receipt to your callback URL in the following format
+YYYY-MM-DD HH:MM:SS e.</td>
+        <td><a href="dosamigos-nexmo-object.html">dosamigos\nexmo\Object</a></td>
+    </tr>
+            <tr class="inherited" id="$msisdn">
+        <td><a href="dosamigos-nexmo-object.html#$msisdn-detail">$msisdn</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>The number message was delivered to.</td>
+        <td><a href="dosamigos-nexmo-object.html">dosamigos\nexmo\Object</a></td>
+    </tr>
+            <tr class="inherited" id="$networkCode">
+        <td><a href="dosamigos-nexmo-object.html#$networkCode-detail">$networkCode</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>The optional identifier of a mobile network MCCMNC.</td>
+        <td><a href="dosamigos-nexmo-object.html">dosamigos\nexmo\Object</a></td>
+    </tr>
+            <tr id="$text">
+        <td><a href="dosamigos-nexmo-inboundmessage.html#$text-detail">$text</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>Content of the message.</td>
+        <td><a href="dosamigos-nexmo-inboundmessage.html">dosamigos\nexmo\InboundMessage</a></td>
+    </tr>
+            <tr class="inherited" id="$to">
+        <td><a href="dosamigos-nexmo-object.html#$to-detail">$to</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>The sender id of the message</td>
+        <td><a href="dosamigos-nexmo-object.html">dosamigos\nexmo\Object</a></td>
+    </tr>
+            <tr id="$type">
+        <td><a href="dosamigos-nexmo-inboundmessage.html#$type-detail">$type</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>Expected values are: text, unicode (URL encoded, valid for standard GSM, Arabic, Chinese .</td>
+        <td><a href="dosamigos-nexmo-inboundmessage.html">dosamigos\nexmo\InboundMessage</a></td>
+    </tr>
+            <tr id="$udh">
+        <td><a href="dosamigos-nexmo-inboundmessage.html#$udh-detail">$udh</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>User Data Header (hex encoded).</td>
+        <td><a href="dosamigos-nexmo-inboundmessage.html">dosamigos\nexmo\InboundMessage</a></td>
+    </tr>
+    </table>
+</div>
+
+<a name="methods"></a>
+
+<div class="summary doc-method">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-method" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+        <tr class="inherited" id="__construct()">
+        <td><a href="dosamigos-nexmo-object.html#__construct()-detail">__construct()</a></td>
+        <td>Constructor override. Required to transform the parameter names to variable names.</td>
+        <td><a href="dosamigos-nexmo-object.html">dosamigos\nexmo\Object</a></td>
+    </tr>
+    </table>
+</div>
+
+<a name="events"></a>
+
+<a name="constants"></a>
+
+<h2>Property Details</h2>
+
+<div class="property-doc">
+
+    <div class="detail-header h3" id="$concat-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-inboundmessage.html#$concat-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $concat        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <a href="dosamigos-nexmo-inboundmessage.html#$concat-detail">$concat</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+    <p>Set to true if a MO concatenated message is detected. Long concatenated Inbound specific.</p>
+
+    
+
+    <div class="detail-header h3" id="$concatPart-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-inboundmessage.html#$concatPart-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $concatPart        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <a href="dosamigos-nexmo-inboundmessage.html#$concatPart-detail">$concatPart</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+    <p>The part number of this message within the set (starts at 1). Long concatenated Inbound specific.</p>
+
+    
+
+    <div class="detail-header h3" id="$concatRef-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-inboundmessage.html#$concatRef-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $concatRef        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <a href="dosamigos-nexmo-inboundmessage.html#$concatRef-detail">$concatRef</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+    <p>Transaction reference, all message parts will shared the same transaction reference. Long
+concatenated Inbound specific.</p>
+
+    
+
+    <div class="detail-header h3" id="$concatTotal-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-inboundmessage.html#$concatTotal-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $concatTotal        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <a href="dosamigos-nexmo-inboundmessage.html#$concatTotal-detail">$concatTotal</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+    <p>The total number of parts in this concatenated message. set Long concatenated Inbound specific.</p>
+
+    
+
+    <div class="detail-header h3" id="$data-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-inboundmessage.html#$data-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $data        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <a href="dosamigos-nexmo-inboundmessage.html#$data-detail">$data</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+    <p>Content of the message. Binary Inbound specific.</p>
+
+    
+
+    <div class="detail-header h3" id="$text-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-inboundmessage.html#$text-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $text        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <a href="dosamigos-nexmo-inboundmessage.html#$text-detail">$text</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+    <p>Content of the message. Specific to text inbound type message.</p>
+
+    
+
+    <div class="detail-header h3" id="$type-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-inboundmessage.html#$type-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $type        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <a href="dosamigos-nexmo-inboundmessage.html#$type-detail">$type</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+    <p>Expected values are: text, unicode (URL encoded, valid for standard GSM, Arabic, Chinese ...
+characters) or binary</p>
+
+    
+
+    <div class="detail-header h3" id="$udh-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-inboundmessage.html#$udh-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $udh        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <a href="dosamigos-nexmo-inboundmessage.html#$udh-detail">$udh</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+    <p>User Data Header (hex encoded). Binary Inbound specific.</p>
+
+    
+</div>
+        </div>
+</div>
+
+<script type="text/javascript">
+    /*<![CDATA[*/
+    $("a.toggle").on('click', function () {
+        var $this = $(this);
+        if ($this.hasClass('properties-hidden')) {
+            $this.text($this.text().replace(/Show/,'Hide'));
+            $this.parents(".summary").find(".inherited").show();
+            $this.removeClass('properties-hidden');
+        } else {
+            $this.text($this.text().replace(/Hide/,'Show'));
+            $this.parents(".summary").find(".inherited").hide();
+            $this.addClass('properties-hidden');
+        }
+
+        return false;
+    });
+    /*
+     $(".sourceCode a.show").toggle(function () {
+     $(this).text($(this).text().replace(/show/,'hide'));
+     $(this).parents(".sourceCode").find("div.code").show();
+     },function () {
+     $(this).text($(this).text().replace(/hide/,'show'));
+     $(this).parents(".sourceCode").find("div.code").hide();
+     });
+     $("a.sourceLink").click(function () {
+     $(this).attr('target','_blank');
+     });
+     */
+    /*]]>*/
+</script>
+
+
+</div>
+
+<footer class="footer">
+        <p class="pull-right"><small>Page generated on Sun, 25 May 2014 20:07:18 +0000</small></p>
+    Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
+
+<script type="text/javascript">jQuery(document).ready(function () {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) shiftWindow();
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// focus the search field
+searchBox.focus();
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

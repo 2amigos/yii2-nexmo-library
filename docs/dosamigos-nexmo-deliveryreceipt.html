@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en" />
+    <link href="./assets/c42f0948/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/a3ecaf59/style.css" rel="stylesheet">
+<script src="./assets/11f97712/jquery.js"></script>
+<script src="./assets/c42f0948/js/bootstrap.js"></script>
+<script src="./assets/20cb9e18/jssearch.js"></script>    <title>Yii 2.0 Nexmo Library API Documentation</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w13" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#w13-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">Yii 2.0 Nexmo Library API Documentation</a></div><div id="w13-collapse" class="collapse navbar-collapse"><ul id="w14" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li></ul><div class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+  </div>
+</div>
+</div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    
+<div class="row">
+    <div class="col-md-3">
+                <div id="navigation" class="list-group"><a class="list-group-item active" href="#navigation-12" data-toggle="collapse" data-parent="#navigation">dosamigos\nexmo <b class="caret"></b></a><div id="navigation-12" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./dosamigos-nexmo-account.html">Account</a>
+<a class="list-group-item" href="./dosamigos-nexmo-client.html">Client</a>
+<a class="list-group-item" href="./dosamigos-nexmo-deliverycallbackaction.html">DeliveryCallbackAction</a>
+<a class="list-group-item" href="./dosamigos-nexmo-deliverycallbackevent.html">DeliveryCallbackEvent</a>
+<a class="list-group-item active" href="./dosamigos-nexmo-deliveryreceipt.html">DeliveryReceipt</a>
+<a class="list-group-item" href="./dosamigos-nexmo-inboundcallbackaction.html">InboundCallbackAction</a>
+<a class="list-group-item" href="./dosamigos-nexmo-inboundcallbackevent.html">InboundCallbackEvent</a>
+<a class="list-group-item" href="./dosamigos-nexmo-inboundmessage.html">InboundMessage</a>
+<a class="list-group-item" href="./dosamigos-nexmo-object.html">Object</a>
+<a class="list-group-item" href="./dosamigos-nexmo-sms.html">Sms</a></div></div>    </div>
+    <div class="col-md-9 api-content" role="main">
+        <h1>Class dosamigos\nexmo\DeliveryReceipt</h1>
+<div id="nav">
+    <a href="index.html">All Classes</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+                    | <a href="#constants">Constants</a>
+    </div>
+
+<table class="summaryTable docClass table table-bordered">
+    <colgroup>
+        <col class="col-name" />
+        <col class="col-value" />
+    </colgroup>
+            <tr><th>Inheritance</th><td><a href="dosamigos-nexmo-deliveryreceipt.html">dosamigos\nexmo\DeliveryReceipt</a> &raquo;
+<a href="dosamigos-nexmo-object.html">dosamigos\nexmo\Object</a> &raquo;
+yii\base\Object</td></tr>
+                                </table>
+
+<div id="classDescription">
+    <strong>Class DeliveryReceipt is the class that holds all the parameters received when a CallBack Url is set for message
+delivery callback. Nexmo calls your configured CallBack Url (that should be done using <a href="dosamigos-nexmo-deliverycallbackaction.html">dosamigos\nexmo\DeliveryCallbackAction</a>
+action) and sends a list of parameters that <a href="dosamigos-nexmo-deliveryreceipt.html">dosamigos\nexmo\DeliveryReceipt</a> is initialized with.</strong>
+    <p></p>
+</div>
+
+<a name="properties"></a>
+
+<div class="summary doc-property">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-property" />
+    <col class="col-type" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+        <tr id="$clientRef">
+        <td><a href="dosamigos-nexmo-deliveryreceipt.html#$clientRef-detail">$clientRef</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>If you set a custom reference during your send request, this will return that value.</td>
+        <td><a href="dosamigos-nexmo-deliveryreceipt.html">dosamigos\nexmo\DeliveryReceipt</a></td>
+    </tr>
+            <tr id="$errCode">
+        <td><a href="dosamigos-nexmo-deliveryreceipt.html#$errCode-detail">$errCode</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>The status related error code</td>
+        <td><a href="dosamigos-nexmo-deliveryreceipt.html">dosamigos\nexmo\DeliveryReceipt</a></td>
+    </tr>
+            <tr class="inherited" id="$messageId">
+        <td><a href="dosamigos-nexmo-object.html#$messageId-detail">$messageId</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>The message ID.</td>
+        <td><a href="dosamigos-nexmo-object.html">dosamigos\nexmo\Object</a></td>
+    </tr>
+            <tr class="inherited" id="$messageTimestamp">
+        <td><a href="dosamigos-nexmo-object.html#$messageTimestamp-detail">$messageTimestamp</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>When Nexmo started to push the receipt to your callback URL in the following format
+YYYY-MM-DD HH:MM:SS e.</td>
+        <td><a href="dosamigos-nexmo-object.html">dosamigos\nexmo\Object</a></td>
+    </tr>
+            <tr class="inherited" id="$msisdn">
+        <td><a href="dosamigos-nexmo-object.html#$msisdn-detail">$msisdn</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>The number message was delivered to.</td>
+        <td><a href="dosamigos-nexmo-object.html">dosamigos\nexmo\Object</a></td>
+    </tr>
+            <tr class="inherited" id="$networkCode">
+        <td><a href="dosamigos-nexmo-object.html#$networkCode-detail">$networkCode</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>The optional identifier of a mobile network MCCMNC.</td>
+        <td><a href="dosamigos-nexmo-object.html">dosamigos\nexmo\Object</a></td>
+    </tr>
+            <tr id="$price">
+        <td><a href="dosamigos-nexmo-deliveryreceipt.html#$price-detail">$price</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>The message price</td>
+        <td><a href="dosamigos-nexmo-deliveryreceipt.html">dosamigos\nexmo\DeliveryReceipt</a></td>
+    </tr>
+            <tr id="$scts">
+        <td><a href="dosamigos-nexmo-deliveryreceipt.html#$scts-detail">$scts</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>UTC time when notification is received from mobile network in the following format YYMMDDHHMM e.</td>
+        <td><a href="dosamigos-nexmo-deliveryreceipt.html">dosamigos\nexmo\DeliveryReceipt</a></td>
+    </tr>
+            <tr id="$status">
+        <td><a href="dosamigos-nexmo-deliveryreceipt.html#$status-detail">$status</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>The status of the message</td>
+        <td><a href="dosamigos-nexmo-deliveryreceipt.html">dosamigos\nexmo\DeliveryReceipt</a></td>
+    </tr>
+            <tr class="inherited" id="$to">
+        <td><a href="dosamigos-nexmo-object.html#$to-detail">$to</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>The sender id of the message</td>
+        <td><a href="dosamigos-nexmo-object.html">dosamigos\nexmo\Object</a></td>
+    </tr>
+    </table>
+</div>
+
+<a name="methods"></a>
+
+<div class="summary doc-method">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-method" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+        <tr class="inherited" id="__construct()">
+        <td><a href="dosamigos-nexmo-object.html#__construct()-detail">__construct()</a></td>
+        <td>Constructor override. Required to transform the parameter names to variable names.</td>
+        <td><a href="dosamigos-nexmo-object.html">dosamigos\nexmo\Object</a></td>
+    </tr>
+            <tr id="getErrorLabel()">
+        <td><a href="dosamigos-nexmo-deliveryreceipt.html#getErrorLabel()-detail">getErrorLabel()</a></td>
+        <td></td>
+        <td><a href="dosamigos-nexmo-deliveryreceipt.html">dosamigos\nexmo\DeliveryReceipt</a></td>
+    </tr>
+            <tr id="getReceivedTime()">
+        <td><a href="dosamigos-nexmo-deliveryreceipt.html#getReceivedTime()-detail">getReceivedTime()</a></td>
+        <td>Returns the time in milliseconds from <a href="dosamigos-nexmo-deliveryreceipt.html#$scts-detail">$scts</a></td>
+        <td><a href="dosamigos-nexmo-deliveryreceipt.html">dosamigos\nexmo\DeliveryReceipt</a></td>
+    </tr>
+            <tr id="init()">
+        <td><a href="dosamigos-nexmo-deliveryreceipt.html#init()-detail">init()</a></td>
+        <td></td>
+        <td><a href="dosamigos-nexmo-deliveryreceipt.html">dosamigos\nexmo\DeliveryReceipt</a></td>
+    </tr>
+            <tr id="registerTranslations()">
+        <td><a href="dosamigos-nexmo-deliveryreceipt.html#registerTranslations()-detail">registerTranslations()</a></td>
+        <td>Registers the translations</td>
+        <td><a href="dosamigos-nexmo-deliveryreceipt.html">dosamigos\nexmo\DeliveryReceipt</a></td>
+    </tr>
+    </table>
+</div>
+
+<a name="events"></a>
+
+<a name="constants"></a>
+<div class="summary doc-const">
+    <h2>Constants</h2>
+
+    <p><a href="#" class="toggle">Hide inherited constants</a></p>
+
+    <table class="summary-table table table-striped table-bordered table-hover">
+    <colgroup>
+        <col class="col-const" />
+        <col class="col-value" />
+        <col class="col-description" />
+        <col class="col-defined" />
+    </colgroup>
+    <tr>
+        <th>Constant</th><th>Value</th><th>Description</th><th>Defined By</th>
+    </tr>
+            <tr id="STATUS_ACCEPTED">
+          <td>STATUS_ACCEPTED<a name="STATUS_ACCEPTED-detail"></a></td>
+          <td>'accepted'</td>
+          <td>Message has been accepted by the mobile operator.
+</td>
+          <td><a href="dosamigos-nexmo-deliveryreceipt.html">dosamigos\nexmo\DeliveryReceipt</a></td>
+        </tr>
+            <tr id="STATUS_BUFFERED">
+          <td>STATUS_BUFFERED<a name="STATUS_BUFFERED-detail"></a></td>
+          <td>'buffered'</td>
+          <td>Message is being delivered.
+</td>
+          <td><a href="dosamigos-nexmo-deliveryreceipt.html">dosamigos\nexmo\DeliveryReceipt</a></td>
+        </tr>
+            <tr id="STATUS_DELIVERED">
+          <td>STATUS_DELIVERED<a name="STATUS_DELIVERED-detail"></a></td>
+          <td>'delivered'</td>
+          <td>Message arrived to handset.
+</td>
+          <td><a href="dosamigos-nexmo-deliveryreceipt.html">dosamigos\nexmo\DeliveryReceipt</a></td>
+        </tr>
+            <tr id="STATUS_EXPIRED">
+          <td>STATUS_EXPIRED<a name="STATUS_EXPIRED-detail"></a></td>
+          <td>'expired'</td>
+          <td>Message timed out after we waited 48h to receive status from mobile operator.
+</td>
+          <td><a href="dosamigos-nexmo-deliveryreceipt.html">dosamigos\nexmo\DeliveryReceipt</a></td>
+        </tr>
+            <tr id="STATUS_FAILED">
+          <td>STATUS_FAILED<a name="STATUS_FAILED-detail"></a></td>
+          <td>'failed'</td>
+          <td>Message failed to be delivered.
+</td>
+          <td><a href="dosamigos-nexmo-deliveryreceipt.html">dosamigos\nexmo\DeliveryReceipt</a></td>
+        </tr>
+            <tr id="STATUS_UNKNOWN">
+          <td>STATUS_UNKNOWN<a name="STATUS_UNKNOWN-detail"></a></td>
+          <td>'unknown'</td>
+          <td>Undocumented status from the mobile operator.
+</td>
+          <td><a href="dosamigos-nexmo-deliveryreceipt.html">dosamigos\nexmo\DeliveryReceipt</a></td>
+        </tr>
+        </table>
+</div>
+
+<h2>Property Details</h2>
+
+<div class="property-doc">
+
+    <div class="detail-header h3" id="$clientRef-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-deliveryreceipt.html#$clientRef-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $clientRef        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <a href="dosamigos-nexmo-deliveryreceipt.html#$clientRef-detail">$clientRef</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+    <p>If you set a custom reference during your send request, this will return that value.</p>
+
+    
+
+    <div class="detail-header h3" id="$errCode-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-deliveryreceipt.html#$errCode-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $errCode        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <a href="dosamigos-nexmo-deliveryreceipt.html#$errCode-detail">$errCode</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+    <p>The status related error code</p>
+
+    
+
+    <div class="detail-header h3" id="$price-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-deliveryreceipt.html#$price-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $price        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <a href="dosamigos-nexmo-deliveryreceipt.html#$price-detail">$price</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+    <p>The message price</p>
+
+    
+
+    <div class="detail-header h3" id="$scts-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-deliveryreceipt.html#$scts-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $scts        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <a href="dosamigos-nexmo-deliveryreceipt.html#$scts-detail">$scts</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+    <p>UTC time when notification is received from mobile network in the following format YYMMDDHHMM e.g.
+1101181426 is 2011 Jan 18th 14:26</p>
+
+    
+
+    <div class="detail-header h3" id="$status-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-deliveryreceipt.html#$status-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $status        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <a href="dosamigos-nexmo-deliveryreceipt.html#$status-detail">$status</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+    <p>The status of the message</p>
+
+    
+</div>
+<h2>Method Details</h2>
+
+<div class="method-doc">
+
+    <div class="detail-header h3" id="getErrorLabel()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-deliveryreceipt.html#getErrorLabel()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getErrorLabel()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.string">string</a>|<a href="http://www.php.net/language.types.null">null</a> <strong><a href="dosamigos-nexmo-deliveryreceipt.html#getErrorLabel()-detail">getErrorLabel</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;)</span></td></tr>
+                                                <tr>
+                  <th class="param-name-col">return</th>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a>|<a href="http://www.php.net/language.types.null">null</a></td>
+                  <td class="param-desc-col"><p>The error label</p>
+</td>
+                </tr>
+                                    </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="getReceivedTime()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-deliveryreceipt.html#getReceivedTime()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getReceivedTime()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Returns the time in milliseconds from <a href="dosamigos-nexmo-deliveryreceipt.html#$scts-detail">$scts</a></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature">int <strong><a href="dosamigos-nexmo-deliveryreceipt.html#getReceivedTime()-detail">getReceivedTime</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;)</span></td></tr>
+                                                <tr>
+                  <th class="param-name-col">return</th>
+                  <td class="param-type-col">int</td>
+                  <td class="param-desc-col"><p>The received time</p>
+</td>
+                </tr>
+                                    </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="init()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-deliveryreceipt.html#init()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        init()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature">void <strong><a href="dosamigos-nexmo-deliveryreceipt.html#init()-detail">init</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;)</span></td></tr>
+            </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="registerTranslations()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="dosamigos-nexmo-deliveryreceipt.html#registerTranslations()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        registerTranslations()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Registers the translations</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature">void <strong><a href="dosamigos-nexmo-deliveryreceipt.html#registerTranslations()-detail">registerTranslations</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;)</span></td></tr>
+            </table>
+
+<!--	-->
+</div>
+        </div>
+</div>
+
+<script type="text/javascript">
+    /*<![CDATA[*/
+    $("a.toggle").on('click', function () {
+        var $this = $(this);
+        if ($this.hasClass('properties-hidden')) {
+            $this.text($this.text().replace(/Show/,'Hide'));
+            $this.parents(".summary").find(".inherited").show();
+            $this.removeClass('properties-hidden');
+        } else {
+            $this.text($this.text().replace(/Hide/,'Show'));
+            $this.parents(".summary").find(".inherited").hide();
+            $this.addClass('properties-hidden');
+        }
+
+        return false;
+    });
+    /*
+     $(".sourceCode a.show").toggle(function () {
+     $(this).text($(this).text().replace(/show/,'hide'));
+     $(this).parents(".sourceCode").find("div.code").show();
+     },function () {
+     $(this).text($(this).text().replace(/hide/,'show'));
+     $(this).parents(".sourceCode").find("div.code").hide();
+     });
+     $("a.sourceLink").click(function () {
+     $(this).attr('target','_blank');
+     });
+     */
+    /*]]>*/
+</script>
+
+
+</div>
+
+<footer class="footer">
+        <p class="pull-right"><small>Page generated on Sun, 25 May 2014 20:07:18 +0000</small></p>
+    Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
+
+<script type="text/javascript">jQuery(document).ready(function () {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) shiftWindow();
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// focus the search field
+searchBox.focus();
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>
