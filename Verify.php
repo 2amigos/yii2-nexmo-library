@@ -10,40 +10,25 @@ use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
 
 /**
- * Class Sms handles the methods and properties of sending a SMS message through your Nexmo account.
+ * Class Verify handles the methods and properties of sending a Verify message through your Nexmo account.
  *
- * @see https://docs.nexmo.com/index.php/sms-api/send-message
- * @author Antonio Ramirez <amigo.cobos@gmail.com>
- * @link http://www.ramirezcobos.com/
- * @link http://www.2amigos.us/
+ * @see https://docs.nexmo.com/api-ref/verify
+ * @author Yurii Hetmanskii <jurets75@gmail.com>
  * @package dosamigos\nexmo
  */
 class Verify extends Client
 {
-    /**
-     * @var string the sender address. It can be alphanumeric. Restrictions may apply, depending on the destination.
-     * @see http://help.nexmo.com/categories/7470-faq
-     */
-    //public $from;
     public $api = 'https://api.nexmo.com';
+    
+    /**
+    * @var string
+    * @see https://docs.nexmo.com/api-ref/verify/verify/request
+    */
+    public $brand = 'NexmoVerifyTest';
 
     /**
-     * @inheritdoc
-     * @throws \yii\base\InvalidConfigException
-     */
-    public function init()
-    {
-        parent::init();
-
-        /*if (empty($this->from)) {
-            throw new InvalidConfigException('"$from" cannot be empty.');
-        }*/
-        
-        //$this->uri = '/verify/';
-    }
-
-    /**
-     * @return string the api url call
+     * @return string the api url call for Verify Request
+     * @see https://docs.nexmo.com/api-ref/verify/verify/request
      */
     public function getUrlVerify()
     {
@@ -52,7 +37,8 @@ class Verify extends Client
     }
 
     /**
-     * @return string the api url call
+     * @return string the api url call for Verify Check Request
+     * @see https://docs.nexmo.com/api-ref/verify/check/request
      */
     public function getUrlCheck()
     {
@@ -61,35 +47,19 @@ class Verify extends Client
     }
 
     /**
-     * Sends a text message
-     * @param string $to the mobile number in international format. Ex: 447525856424 or 00447525856424 to UK.
-     * @param string $text the body of the text message (with a maximum length of 3200 chars)
+     * Sends a Verify Request
+     * @param string $number the mobile number in international format. Ex: 447525856424 or 00447525856424 to UK.
      * @param array $params optional parameters to be attached to the call.
      * @return mixed|null the request response
-     * @see https://docs.nexmo.com/index.php/sms-api/send-message
+     * @see https://docs.nexmo.com/api-ref/verify/verify/request
      */
-    public function sendVerify($to, /*$text, */$params = [])
+    public function sendVerify($number, $params = [])
     {
-        /*$type = ArrayHelper::getValue($params, 'type');
-        if (strtolower($type) != 'unicode') {
-            $type = max(array_map('ord', str_split($text))) > 127
-                ? 'unicode'
-                : ($type != null ? $type : 'text');
-        }*/
-
         $params = ArrayHelper::merge(
-            $params,
-            [
-                //'from' => $this->getValidatedFrom(),
-                'number' => $to,
-                //'text' => $text,
-                //'type' => $type
-            ]
+            ['number' => $number, 'brand' => $this->brand], //required parameters
+            $params  //optional parameters
         );
-
         return $this->request($this->getUrlVerify(), $this->getEncodedParams($params));
     }
-
-
 
 } 
