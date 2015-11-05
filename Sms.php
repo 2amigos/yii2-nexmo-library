@@ -151,13 +151,13 @@ class Sms extends Client
      * @param array $params
      * @return array
      */
-    protected function getEncodedParams($params)
+    /*protected function getEncodedParams($params)
     {
         $validated = [];
         foreach ((array)$params as $key => $param) {
             $validated[$key] = $this->validateUTF8($param);
         }
         return $validated;
-    }
+    }*/
 
 } 
