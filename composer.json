@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "dosamigos\\nexmo\\": "src"
+            "dosamigos\\nexmo\\": ""
         }
     }
 }
