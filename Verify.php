@@ -21,11 +21,17 @@ class Verify extends Client
     public $api = 'https://api.nexmo.com';
     
     /**
-    * @var string
+    * @var string - name of the company or App you are using Verify for
     * @see https://docs.nexmo.com/api-ref/verify/verify/request
     */
     public $brand = 'NexmoVerifyTest';
 
+    /**
+    * @var mixed - returned Reponse (json)
+    * @see https://docs.nexmo.com/api-ref/verify/verify/response
+    */
+    public $response;
+    
     /**
      * @return string the api url call for Verify Request
      * @see https://docs.nexmo.com/api-ref/verify/verify/request
@@ -42,7 +48,7 @@ class Verify extends Client
      */
     public function getUrlCheck()
     {
-        $this->uri = '/verify/check';
+        $this->uri = '/verify/check/';
         return $this->api . $this->uri . $this->format;
     }
 
@@ -59,7 +65,26 @@ class Verify extends Client
             ['number' => $number, 'brand' => $this->brand], //required parameters
             $params  //optional parameters
         );
-        return $this->request($this->getUrlVerify(), $this->getEncodedParams($params));
+        $this->response = $this->request($this->getUrlVerify(), $this->getEncodedParams($params));
+        return $this->response;
     }
 
+    /**
+     * Sends a Verify Check Request
+     * @param string $request_id The identifier of the Verify Request to check
+     * @param string $code The PIN code given by your user
+     * @param array $params optional parameters to be attached to the call.
+     * @return mixed|null the request response
+     * @see https://docs.nexmo.com/api-ref/verify/check/request
+     */
+    public function sendVerifyCheck($request_id, $code, $params = [])
+    {
+        $params = ArrayHelper::merge(
+            ['request_id' => $request_id, 'code' => $code], //required parameters
+            $params  //optional parameters
+        );
+        $this->response = $this->request($this->getUrlCheck(), $this->getEncodedParams($params));
+        return $this->response;
+    }
+    
 } 
