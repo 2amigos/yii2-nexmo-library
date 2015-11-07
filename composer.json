@@ -9,7 +9,7 @@
             "name": "Antonio Ramirez",
             "email": "ramirez.cobos@gmail.com",
             "homepage": "http://2amigos.us"
-        },
+        }
     ],
     "require": {
         "yiisoft/yii2": "*",
