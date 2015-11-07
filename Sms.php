@@ -146,18 +146,4 @@ class Sms extends Client
         return (string)$from;
     }
 
-    /**
-     * All requests require UTF-8 encoding
-     * @param array $params
-     * @return array
-     */
-    /*protected function getEncodedParams($params)
-    {
-        $validated = [];
-        foreach ((array)$params as $key => $param) {
-            $validated[$key] = $this->validateUTF8($param);
-        }
-        return $validated;
-    }*/
-
 } 
