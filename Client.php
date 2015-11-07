@@ -80,7 +80,7 @@ class Client extends Component
                 : $response->json();
 
         } catch (RequestException $e) {
-            return $e;
+            return null;
         }
     }
 
