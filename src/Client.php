@@ -108,4 +108,19 @@ class Client extends Component
     {
         return (!mb_check_encoding($value, 'UTF-8')) ? utf8_encode($value) : $value;
     }
-}
+    
+    /**
+     * All requests require UTF-8 encoding
+     * @param array $params
+     * @return array
+     */
+    protected function getEncodedParams($params)
+    {
+        $validated = [];
+        foreach ((array)$params as $key => $param) {
+            $validated[$key] = $this->validateUTF8($param);
+        }
+        return $validated;
+    }
+    
+} 
