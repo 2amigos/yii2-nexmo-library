@@ -31,13 +31,13 @@ First you have to create your [Nexmo account](Nexmo API credentials) and get you
 
 ```php
 // to send an sms message
-$sms = new dosamigos\Sms(['key' => 'API_KEY', 'secret' => 'API_SECRET', 'from' => 'SENDERID']);
+$sms = new \dosamigos\nexmo\Sms(['key' => 'API_KEY', 'secret' => 'API_SECRET', 'from' => 'SENDERID']);
 
 // lets call the API to get a json response
 $sms->format = 'json';
 
 // send a message with an optional parameter (see Nexmo doc for more optional parameters)
-$response = $sms->sentText('RECIPIENTSNUMBER', 'Hello World!', ['clientRef' => 'YOURCLIENTREF']);
+$response = $sms->sendText('RECIPIENTSNUMBER', 'Hello World!', ['clientRef' => 'YOURCLIENTREF']);
 
 // if a response expects a JSON object, it will return as an array, if format was a XML, it will return an object.
 echo $response['message-count']; // the number of parts the message was split into
