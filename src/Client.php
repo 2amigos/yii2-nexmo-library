@@ -1,7 +1,7 @@
 <?php
 /**
  * @link https://github.com/2amigos/yii2-nexmo-library
- * @copyright Copyright (c) 2013-2015 2amigOS! Consulting Group LLC
+ * @copyright Copyright (c) 2013-2017 2amigOS! Consulting Group LLC
  * @license http://opensource.org/licenses/BSD-3-Clause
  */
 
@@ -108,7 +108,7 @@ class Client extends Component
     {
         return (!mb_check_encoding($value, 'UTF-8')) ? utf8_encode($value) : $value;
     }
-    
+
     /**
      * All requests require UTF-8 encoding
      * @param array $params
@@ -122,5 +122,5 @@ class Client extends Component
         }
         return $validated;
     }
-    
-} 
+
+}

@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright Copyright (c) 2013 2amigOS! Consulting Group LLC
+ * @copyright Copyright (c) 2013-2017 2amigOS! Consulting Group LLC
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
@@ -19,7 +19,7 @@ use yii\helpers\ArrayHelper;
 class Verify extends Client
 {
     public $api = 'https://api.nexmo.com';
-    
+
     /**
     * @var string - name of the company or App you are using Verify for
     * @see https://docs.nexmo.com/api-ref/verify/verify/request
@@ -31,7 +31,7 @@ class Verify extends Client
     * @see https://docs.nexmo.com/api-ref/verify/verify/response
     */
     public $response;
-    
+
     /**
      * @return string the api url call for Verify Request
      * @see https://docs.nexmo.com/api-ref/verify/verify/request
@@ -86,5 +86,5 @@ class Verify extends Client
         $this->response = $this->request($this->getUrlCheck(), $this->getEncodedParams($params));
         return $this->response;
     }
-    
-} 
+
+}
