@@ -55,7 +55,9 @@ class Account extends Client
 
     /**
      * Retrieve our outbound pricing for a given country.
+     *
      * @param string $country A 2 letter country code. Ex: CA
+     *
      * @return mixed
      * @see https://docs.nexmo.com/index.php/developer-api/account-pricing
      */
@@ -70,14 +72,17 @@ class Account extends Client
                 $this->getAcceptHeaderOption()
             );
         }
+
         return $this->_cache['pricing'][$code];
     }
 
     /**
      * Get all inbound numbers associated with your Nexmo account.
+     *
      * @param int $index Page index (>0, default 1). Ex: 2
      * @param int $size Page size (max 100, default 10). Ex: 25
      * @param string $pattern Page size (max 100, default 10). Ex: 25
+     *
      * @return mixed
      * @see https://docs.nexmo.com/index.php/developer-api/account-numbers
      */
@@ -101,16 +106,25 @@ class Account extends Client
 
     /**
      * Get available inbound numbers for a given country.
+     *
      * @param string $country Country code. Ex: CA
      * @param string $pattern A matching pattern. Ex: 888
      * @param string $features Available features are SMS and VOICE, use a comma-separated values. Ex: SMS,VOICE
      * @param int $index Page index (>0, default 1). Ex: 2
      * @param int $size Page size (max 100, default 10). Ex: 25
+     * @param int $searchPattern The search strategy for pattern.
+     *
      * @return mixed
      * @see https://docs.nexmo.com/index.php/developer-api/number-search
      */
-    public function searchNumbers($country, $pattern = null, $features = null, $index = null, $size = null)
-    {
+    public function searchNumbers(
+        $country,
+        $pattern = null,
+        $features = null,
+        $index = null,
+        $size = null,
+        $searchPattern = null
+    ) {
         if ($size > 100) {
             $size = 100;
         }
@@ -119,6 +133,7 @@ class Account extends Client
             [
                 'country' => strtoupper($country),
                 'pattern' => $pattern,
+                'search_pattern' => $searchPattern,
                 'features' => $features,
                 'index' => $index,
                 'size' => $size
@@ -138,8 +153,10 @@ class Account extends Client
 
     /**
      * Cancel a given inbound number subscription.
+     *
      * @param string $country Country code. Ex: CA
      * @param string $msisdn One of your inbound numbers Ex: 34911067000
+     *
      * @return string the status code. Possible values:
      * - 200 if successful cancellation
      * - 401 if wrong credentials
@@ -161,13 +178,16 @@ class Account extends Client
         );
         $url = $this->getUrl('cancel_number');
         $response = $this->getGuzzleClient()->post($url, $options);
+
         return $response->getStatusCode();
     }
 
     /**
      * Purchase a given inbound number.
+     *
      * @param string $country Country code. Ex: ES
      * @param string $msisdn An available inbound number Ex: 34911067000
+     *
      * @return string the status code. Possible values:
      * - 200 if successful purchase
      * - 401 if wrong credentials
@@ -189,11 +209,13 @@ class Account extends Client
         );
         $url = $this->getUrl('buy_number');
         $response = $this->getGuzzleClient()->post($url, $options);
+
         return $response->getStatusCode();
     }
 
     /**
      * Update your number callback.
+     *
      * @param string $country Country code. Ex: ES
      * @param string $msisdn One of your inbound numbers Ex: 34911067000
      * @param string $mHttpUrl The URL should be active to be taken into account Ex: http://mycallback.servername
@@ -201,6 +223,7 @@ class Account extends Client
      * @param string $voiceCallbackType The voice callback type for SIP end point (sip), for a telephone number (tel),
      * for VoiceXML end point (vxml)
      * @param string $voiceCallbackValue The voice callback value based on the voiceCallbackType
+     *
      * @return string
      * @see https://docs.nexmo.com/index.php/developer-api/number-update
      */
@@ -236,11 +259,13 @@ class Account extends Client
 
     /**
      * Update your account settings.
+     *
      * @param string $newSecret Your new API secret (8 characters max)
      * @param string $moCallBackUrl Inbound call back URL. The URL should be active to be taken into account
      * Ex: http://mycallback.servername
      * @param string $drCallBackUrl DLR call back URL. The URL should be active to be taken into account and
      * Ex: http://mycallback.servername
+     *
      * @return mixed|null
      * @throws \yii\base\InvalidParamException
      * @see https://docs.nexmo.com/index.php/developer-api/account-settings
@@ -277,8 +302,10 @@ class Account extends Client
     /**
      * Top-up your account, only if you have turn-on the 'auto-reload' feature. The top-up amount is the one associated
      * with your 'auto-reload' transaction.
+     *
      * @param string $transactionId The transaction id associated with your **first** 'auto reload' top-up.
      * Ex: 00X123456Y7890123Z
+     *
      * @return string the status code. Possible responses:
      * - 200 if successful top-up
      * - 401 if not authorized to perform the request
@@ -305,7 +332,9 @@ class Account extends Client
     /**
      * Search a previously sent message for a given message id. Please note a message become searchable a few minutes
      * after submission for real-time delivery notification implement our DLR call back.
+     *
      * @param string $id Your message id received at submission time Ex: 00A0B0C0
+     *
      * @return mixed
      * @see https://docs.nexmo.com/index.php/developer-api/search-message
      */
@@ -325,7 +354,9 @@ class Account extends Client
     /**
      * Search sent messages. Please note a message become searchable a few minutes after submission for real-time
      * delivery notification implement the DLR call back.
+     *
      * @param array $ids A list of message ids, up to 10 Ex: ['00A0B0C0','00A0B0C1','00A0B0C2']
+     *
      * @return mixed
      * @see https://docs.nexmo.com/index.php/developer-api/search-messages
      */
@@ -349,14 +380,17 @@ class Account extends Client
                 $this->getAcceptHeaderOption()
             );
         }
+
         return $this->_cache['search_messages'][$crc];
     }
 
     /**
      * Search sent messages. Please note a message become searchable a few minutes after submission for real-time
      * delivery notification implement the DLR call back.
+     *
      * @param string $date Message date submission YYYY-MM-DD Ex: 2011-11-15
      * @param string $to A recipient number Ex: 1234567890
+     *
      * @return mixed
      * @see https://docs.nexmo.com/index.php/developer-api/search-messages
      */
@@ -381,8 +415,10 @@ class Account extends Client
 
     /**
      * Search rejected messages. Please note a message become searchable a few minutes after submission.
+     *
      * @param string $date Message date submission YYYY-MM-DD Ex: 2011-11-15
      * @param string $to A recipient number Ex: 1234567890
+     *
      * @return mixed
      */
     public function searchRejections($date, $to = null)
@@ -408,7 +444,9 @@ class Account extends Client
 
     /**
      * Returns the formed api call
+     *
      * @param string $command the command key
+     *
      * @return string the api url call
      */
     protected function getUrl($command)
