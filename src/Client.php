@@ -44,7 +44,7 @@ class Client extends Component
      */
     protected $uri;
     /**
-     * @var \Guzzle\Http\Client a client to make requests to the API
+     * @var \GuzzleHttp\Client a client to make requests to the API
      */
     private $_guzzle;
 
@@ -63,9 +63,11 @@ class Client extends Component
 
     /**
      * Makes a Url request and returns its response
+     *
      * @param string $url the uri to call
      * @param array $params the parameters to be bound to the call
      * @param array $options the options to be attached to the client
+     *
      * @return mixed|null
      */
     protected function request($url, $params = [], $options = [])
@@ -77,8 +79,8 @@ class Client extends Component
             $response = $this->getGuzzleClient()->get($url, ArrayHelper::merge(['query' => $params], $options));
 
             return $this->format == 'xml'
-                ? $response->xml()
-                : $response->json();
+                ? simplexml_load_string($response->getBody()->getContents(), LIBXML_NOCDATA | LIBXML_NOERROR)
+                : json_decode($response->getBody()->getContents(), true, 512);
 
         } catch (RequestException $e) {
             return null;
@@ -94,6 +96,7 @@ class Client extends Component
         if ($this->_guzzle == null) {
             $this->_guzzle = new HttpClient();
         }
+
         return $this->_guzzle;
     }
 
@@ -101,7 +104,9 @@ class Client extends Component
      * Validates whether the value is UTF8 encoded and if not, it encodes it.
      * From Nexmo Docs: All requests are submitted through the HTTP POST or GET method using UTF-8 encoding and URL
      * encoded values.
+     *
      * @param string $value
+     *
      * @return string
      */
     protected function validateUTF8($value)
@@ -111,7 +116,9 @@ class Client extends Component
 
     /**
      * All requests require UTF-8 encoding
+     *
      * @param array $params
+     *
      * @return array
      */
     protected function getEncodedParams($params)
@@ -120,6 +127,7 @@ class Client extends Component
         foreach ((array)$params as $key => $param) {
             $validated[$key] = $this->validateUTF8($param);
         }
+
         return $validated;
     }
 
